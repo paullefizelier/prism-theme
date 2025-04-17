@@ -132,12 +132,11 @@ p,
 @media screen and (max-width: 768px) {
   #prismCart {
     width: 100% !important;
-	  
-	  & .preorder-cart-notice {
-		  display:none;
-	  }
+
+    & .preorder-cart-notice {
+      display: none;
+    }
   }
-	
 }
 
 /** ------------ Home Page ------------- */
@@ -166,6 +165,11 @@ p,
 .scroll-position-not-at-top {
   & .prismNav {
     background-color: #fff !important;
+  }
+}
+.scroll-position-at-top {
+  & .prismNav {
+    top: 40px !important;
   }
 }
 
@@ -559,7 +563,7 @@ ins {
 }
 
 .woocommerce div.product div.images .flex-control-thumbs {
-	display:flex;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
@@ -570,8 +574,8 @@ ins {
   .woocommerce div.product div.images .flex-control-thumbs {
     display: flex;
     overflow: scroll;
-    justify-content:center;
-	& li {
+    justify-content: center;
+    & li {
       width: 4%;
       &:before {
         content: "";
@@ -580,84 +584,79 @@ ins {
         border-radius: 50%;
         position: absolute;
         background-color: #4a5b6d;
-
       }
-		&:has(.flex-active):before {
-			background-color: #101820;
-			transition: 0.8s all;
-			-webkit-transition: 0.8s all;
-			-moz-transition: 0.8s all;
-			-o-transition: 0.8s all;
-		}
+      &:has(.flex-active):before {
+        background-color: #101820;
+        transition: 0.8s all;
+        -webkit-transition: 0.8s all;
+        -moz-transition: 0.8s all;
+        -o-transition: 0.8s all;
+      }
 
       & img {
         display: none;
       }
     }
   }
-	
-.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images:before {
+
+  .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images:before {
     font-family: "Material Symbols Outlined";
     content: "\e5e0";
     color: #111820;
     position: absolute;
     top: 50%;
     z-index: 2;
-}
-.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images:after {
+  }
+  .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images:after {
     font-family: "Material Symbols Outlined";
     content: "\e5e1";
     color: #111820;
     position: absolute;
     top: 50%;
     z-index: 2;
-	right:0
-}
-}
-
-#theme-main:has(.post-password-form){
-	background-color: #111820;
-	
+    right: 0;
+  }
 }
 
-.page-template-empty:has(.post-password-form){
-		background-color: #111820;
-	
+#theme-main:has(.post-password-form) {
+  background-color: #111820;
+}
+
+.page-template-empty:has(.post-password-form) {
+  background-color: #111820;
 }
 
 .post-password-form {
-	max-width: 75vw; 
-	margin: 100px auto; 
-	color: white;
-	
-	& p {
-		color: #fff;
-		text-align:center
-	}
-	
-	& label {
-		color: #fff; 
-	}
-	& input {
-		padding: 10px; 
-		border-radius: 4px;
-	}
-	& input[type=submit] {
-		border: 1px solid #fff; 
-		background-color: #fff; 
-		
-	}
+  max-width: 75vw;
+  margin: 100px auto;
+  color: white;
+
+  & p {
+    color: #fff;
+    text-align: center;
+  }
+
+  & label {
+    color: #fff;
+  }
+  & input {
+    padding: 10px;
+    border-radius: 4px;
+  }
+  & input[type="submit"] {
+    border: 1px solid #fff;
+    background-color: #fff;
+  }
 }
 
 #locatoraid-form-container {
-	width: 100%;
+  width: 100%;
 }
 #locatoraid-map-list-container {
-	width: 100%;
+  width: 100%;
 }
 
-
 button.gm-ui-hover-effect {
-	width: 16px !important; 
-	height: 16px !important;
+  width: 16px !important;
+  height: 16px !important;
 }
