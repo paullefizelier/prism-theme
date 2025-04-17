@@ -167,7 +167,9 @@ p,
     background-color: #fff !important;
   }
 }
-.scroll-position-at-top {
+.scroll-position-at-top:not(.scroll-position-not-at-top):not(
+    .template-page-order
+  ) {
   & .prismNav {
     top: 40px !important;
   }
