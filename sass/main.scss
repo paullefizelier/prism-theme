@@ -167,11 +167,14 @@ p,
     background-color: #fff !important;
   }
 }
-.scroll-position-at-top:not(.scroll-position-not-at-top):not(
-    .template-page-order
-  ) {
+.scroll-position-at-top {
   & .prismNav {
     top: 40px !important;
+  }
+}
+.template-page-order.scroll-position-at-top {
+  & .prismNav {
+    top: 0 !important;
   }
 }
 
